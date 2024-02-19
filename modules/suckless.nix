@@ -20,6 +20,12 @@
     };
   };
 
+  environment.systemPackages = with pkgs; [
+    st
+    dmenu
+    dwmblocks
+  ];
+
   nixpkgs.overlays = [
     (self: super: {
       dwm = super.dwm.overrideAttrs (oldAttrs: rec {
@@ -29,15 +35,21 @@
     })
 
     (self: super: {
-      dwm = super.st.overrideAttrs (oldAttrs: rec {
+      st = super.st.overrideAttrs (oldAttrs: rec {
         src = /home/bart/code/st;
       });
     })
 
     (self: super: {
-      dwm = super.dmenu.overrideAttrs (oldAttrs: rec {
-        src = /home/bart/code/dmenu;
+      dwmblocks = super.dwmblocks.overrideAttrs (oldAttrs: rec {
+        src = /home/bart/code/dwmblocks;
       });
     })
+
+    #(self: super: {
+    #  dmenu = super.dmenu.overrideAttrs (oldAttrs: rec {
+    #    src = /home/bart/code/dmenu;
+    #  });
+    #})
   ];
 }

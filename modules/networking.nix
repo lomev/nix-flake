@@ -27,5 +27,7 @@
     0.0.0.0 www.dynasty-scans.com
     0.0.0.0 bato.to
     0.0.0.0 www.bato.to
+    0.0.0.0 mangafire.to
+    0.0.0.0 www.mangafire.to
   '';
 }
