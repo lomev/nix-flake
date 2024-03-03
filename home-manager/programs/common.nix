@@ -14,6 +14,12 @@
     maim
     xclip
     arandr
+    sxiv
+
+    # dev tools
+    android-tools
+    python3
+    python311Packages.pip
     
     calibre
     signal-desktop

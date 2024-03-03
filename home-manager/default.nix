@@ -12,6 +12,11 @@
   home.username = "bart";
   home.homeDirectory = "/home/bart";
 
+  services.unclutter.enable = true;
+  services.picom.enable = true;
+  services.dunst.enable = true;
+  services.mpd.musicDirectory = "/home/bart/Music";
+
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.

@@ -98,6 +98,7 @@
     git
     lf
     neofetch
+    xwallpaper
 
     # yubikey
     yubikey-manager

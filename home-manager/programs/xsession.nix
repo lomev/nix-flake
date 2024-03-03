@@ -4,6 +4,6 @@
   xsession.enable = true;  
   xsession.initExtra = ''
     dwmblocks &  
-    xwallpaper --zoom ~/nixos-config/wallpaper.jpg
+    xwallpaper --zoom /home/bart/nixos-config/wallpaper.jpg
   '';
 }

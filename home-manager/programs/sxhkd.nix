@@ -17,9 +17,9 @@
       # passmenu
       "super + p" = "passmenu";
       # clipmenu
-      "super + Insert" = "clipmenu";
+      #"super + Insert" = "clipmenu";
       # youtube
-      "super + y" = "ytfzf -D -L | xargs ~/.local/bin/dmenu_open_url";
+      #"super + y" = "ytfzf -D -L | xargs ~/.local/bin/dmenu_open_url";
       
       # --- dwm ---
       
@@ -44,7 +44,7 @@
       # kill client
       "super + q " = "dwmc killclient";
       # show list of layouts
-      "super + g" = "~/.local/bin/dmenu_layout";
+      #"super + g" = "~/.local/bin/dmenu_layout";
       # view all tags
       "super + 0" = "dwmc viewall";
       # tag all
@@ -62,13 +62,13 @@
       # change gaps to default
       "super + shift + minus" = "dwmc togglegaps";
       # shift view to next tag
-      "super + bracketright" = "dmwc shiftview 1";
+      "super + bracketright" = "dwmc shiftview 1";
       # shift view to prev tag
-      "super + bracketleft" = "dmwc shiftview -1";
+      "super + bracketleft" = "dwmc shiftview -1";
       # toggle scratchpads
       "super + {s,r}" = "dwmc togglescratch {0,1}";
       # update colorscheme
-      "super + F5" = "xrdb -merge $HOME/.Xresources;";
+      #"super + F5" = "xrdb -merge $HOME/.Xresources;";
       # restart dwm
       "super + shift + q" = "dwmc quit";
       # quit dwm
@@ -79,21 +79,21 @@
       # -- dmenu ---
       
       # take a screenshot
-      "super + shift + s" = "~/.local/bin/dmenu_screenshot";
-      # mount a partition
-      "super + F1" = "~/.local/bin/dmenu_mount";
-      # umount a partition
-      "super + F2" = "/usr/local/bin/dmenu_umount";
-      # power options: shutdown, reboot etc.
-      "super + F9" = "~/.local/bin/dmenu_power";
-      # choose colorscheme
-      "super + F6" = "~/.local/bin/dmenu_colorscheme";
-      # play music with dmenu
-      "super + shift + m" = "~/.local/bin/dmenu_mpd";
-      # dmenu rss feed
-      "super + shift + n" = "~/.local/bin/dmenu_feed";
-      # add rss
-      "super + shift + r" = "~/.local/bin/dmenu_rss";
+      #"super + shift + s" = "~/.local/bin/dmenu_screenshot";
+      ## mount a partition
+      #"super + F1" = "~/.local/bin/dmenu_mount";
+      ## umount a partition
+      #"super + F2" = "/usr/local/bin/dmenu_umount";
+      ## power options: shutdown, reboot etc.
+      #"super + F9" = "~/.local/bin/dmenu_power";
+      ## choose colorscheme
+      #"super + F6" = "~/.local/bin/dmenu_colorscheme";
+      ## play music with dmenu
+      #"super + shift + m" = "~/.local/bin/dmenu_mpd";
+      ## dmenu rss feed
+      #"super + shift + n" = "~/.local/bin/dmenu_feed";
+      ## add rss
+      #"super + shift + r" = "~/.local/bin/dmenu_rss";
       
       # --- mpd & audio ---
       
@@ -111,10 +111,10 @@
       # restart sxhkd
       "super + Escape" = "pkill -USR1 -x sxhkd";
       # lockscreen
-      "super + shift + x" = "slock";
-      "super + F11" = "~/.local/bin/dmenu_power";
-      "super + F12" = "~/.local/bin/toggledock";
-      "super + z" = "~/.local/bin/trtoggle";
+      #"super + shift + x" = "slock";
+      #"super + F11" = "~/.local/bin/dmenu_power";
+      #"super + F12" = "~/.local/bin/toggledock";
+      #"super + z" = "~/.local/bin/trtoggle";
     };
   };
 }

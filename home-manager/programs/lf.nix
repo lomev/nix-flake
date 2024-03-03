@@ -68,26 +68,29 @@
     };
 
     keybindings = {
-      h = "left";
+      x = "$$f";
+      X = "!$f";
+      D = "trash";
+      U = "!du -sh";
+      gg = null;
+      gh = "cd ~";
+      o = "$mimeopen";
+      O = "$mimeopen --ask $f";
+      u = "open";
+
+      h = "updir";
       n = "down";
       e = "up";
       i = "right";
-      #h = "updir";
       k = "search-next";
       K = "search-prev";
-      x = "$$f";
-      X = "!$f";
-      #o = "$mimeopen";
-      #O = "$mimeopen --ask $f";
-      #"<enter>" = shell;
     };
 
     cmdKeybindings = {
-        
     };
 
-    previewer.source = "/home/bart/scope";
-    previewer.keybinding = "i";
+    #previewer.source = "/home/bart/scope";
+    #previewer.keybinding = "i";
     #source = "/home/bart/cleaner";
   };
 }
