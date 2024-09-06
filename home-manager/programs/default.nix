@@ -9,6 +9,5 @@
     ./sxhkd.nix
     ./xsession.nix
     ./xresources.nix
-    ./steam.nix
   ];
 }

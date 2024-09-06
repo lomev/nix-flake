@@ -6,6 +6,7 @@
       ../modules/system.nix
       ../modules/suckless.nix
       ../modules/networking.nix
+      ../modules/steam.nix
 
       ./hardware-configuration.nix
     ];
