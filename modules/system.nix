@@ -3,6 +3,8 @@
 {
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   virtualisation.docker.enable = true;
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.joypixels.acceptLicense = true;
@@ -64,9 +66,21 @@
     udisks2.enable = true;
   };
 
+  security.polkit.enable = true;
+
   # Enable sound.
   sound.enable = true;
   hardware.pulseaudio.enable = true;
+
+  # Enable bluetooth
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+    #package = pkgs.bluez;
+    #settings.Policy.AuteEnable = true;
+  };
+
+  services.blueman.enable = true;
 
   programs.zsh.enable = true;
   environment.shells = with pkgs; [ zsh ];
@@ -93,12 +107,7 @@
   environment.systemPackages = with pkgs; [
     # basic useful tools
     neovim
-    wget
-    curl
-    git
-    lf
-    neofetch
-    xwallpaper
+    usbutils
 
     # yubikey
     yubikey-manager
@@ -130,7 +139,7 @@
 
   programs.gnupg.agent = {
     enable = true;
-    pinentryFlavor = "qt";
+    pinentryPackage = pkgs.pinentry-qt;
     enableSSHSupport = true;
   };
 

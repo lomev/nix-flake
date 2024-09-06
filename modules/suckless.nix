@@ -4,26 +4,29 @@
   services = {
     xserver = {
       enable = true;
+      autorun = false;
 
-      layout = "pl";
-      xkbVariant = "colemak";
+      xkb.layout = "pl";
+      xkb.variant = "colemak";
       autoRepeatDelay = 300;
       autoRepeatInterval = 50;
 
       displayManager.startx.enable = true;
       windowManager.dwm.enable = true;
+    };
 
-      libinput = {
-        enable = true;
-        touchpad.disableWhileTyping = true;
-      };
+    #displayManager.defaultSession = "none+dwm";
+
+    libinput = {
+      enable = true;
+      touchpad.disableWhileTyping = true;
     };
   };
 
   environment.systemPackages = with pkgs; [
     st
-    dmenu
     dwmblocks
+    dmenu
   ];
 
   nixpkgs.overlays = [
@@ -54,17 +57,22 @@
       dwmblocks = super.dwmblocks.overrideAttrs (oldAttrs: rec {
         src = pkgs.fetchFromGitHub {
           owner = "lomev";
-          repo = "dwmblocks.new";
+          repo = "dwmblocks-new";
           rev = "0898beb8a09f27818cedb3b7cbf5920e215a956c";
           hash = "sha256-oq6kSGhxsaBiFwJKfcCxAi3wEHrOkteQvUMlabn/Kus=";
         };
       });
     })
 
-    #(self: super: {
-    #  dmenu = super.dmenu.overrideAttrs (oldAttrs: rec {
-    #    src = /home/bart/code/dmenu;
-    #  });
-    #})
+    (self: super: {
+     dmenu = super.dmenu.overrideAttrs (oldAttrs: rec {
+       src = pkgs.fetchFromGitHub {
+         owner = "lomev";
+         repo = "dmenu-new";
+         rev = "0cedbda191443cf9588be40b17346742a5e8b041";
+         hash = "sha256-RioC73Bu7h4nswIBfqDaRRfK3BhjXtpsyyRPv036Fjo=";
+       };
+     });
+    })
   ];
 }

@@ -16,6 +16,7 @@
   services.picom.enable = true;
   services.dunst.enable = true;
   services.mpd.musicDirectory = "/home/bart/Music";
+  services.syncthing.enable = true;
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release

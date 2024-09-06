@@ -100,7 +100,7 @@
       # play next/previous song
       "super + {XF86AudioNext,XF86AudioPrev}" = "mpc {next,prev} && pkill -RTMIN+18 dwmblocks";
       # pause playing song
-      "supur + XF86AudioPlay" = "mpc toggle && pkill -RTMIN+18 dwmblocks";
+      "super + XF86AudioPlay" = "mpc toggle && pkill -RTMIN+18 dwmblocks";
       # change volume
       "{XF86AudioRaiseVolume,XF86AudioLowerVolume}" = "pamixer -{i,d} 5 && pkill -RTMIN+22 dwmblocks";
       # mute volume

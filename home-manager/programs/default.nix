@@ -7,7 +7,8 @@
     ./lf.nix
     ./neovim.nix
     ./sxhkd.nix
-    #./xsession.nix
+    ./xsession.nix
     ./xresources.nix
+    ./steam.nix
   ];
 }

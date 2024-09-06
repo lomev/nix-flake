@@ -2,31 +2,61 @@
 
 {
   home.packages = with pkgs; [
-    gcc
+    # cli programs
+    lf
+    wget
+    curl
     yt-dlp
     ytfzf
     qrencode
     pass
+    neofetch
+    xwallpaper
     buku
     fzf
     sfeed
     mpv
     maim
     xclip
-    arandr
+    toot
+    newsboat
+    unzip
+    lm_sensors
+
+    # gui
+    surf
+    tabbed
+    qutebrowser
+    komikku
     sxiv
+    arandr
+    calibre
+    signal-desktop
+    evolution
+    pcmanfm
+    telegram-desktop
+    qbittorrent
 
     # dev tools
     android-tools
     python3
     python311Packages.pip
-    
-    calibre
-    signal-desktop
-    evolution
-    pcmanfm
+    gcc
+    git
 
+    # sound
     pamixer
     pavucontrol
+
+    # bluetooth
+    bluez
+    bluez-tools
+
+    # anime
+    trackma-curses
+    anime-downloader
+    adl
+    mangal
+    feh
   ];
 }

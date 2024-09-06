@@ -8,7 +8,7 @@
 
       settings = {
         # Change startup page to blank
-        "browser.startup.homepage" = "https://lukesmith.xyz";
+        "browser.startup.homepage" = "";
         "browser.newtabpage.enabled" = false;
 
         # Change UI
@@ -62,7 +62,8 @@
         ublock-origin
         clearurls
         decentraleyes
-        bypass-paywalls-clean
+        #bypass-paywalls-clean
+        leechblock-ng
         istilldontcareaboutcookies
         libredirect 
         search-by-image
