@@ -71,6 +71,21 @@
   # Enable sound.
   sound.enable = true;
   hardware.pulseaudio.enable = true;
+  
+  # Enable OpenGL
+  hardware.opengl.enable = true;
+
+  # Load "nvidia" driver
+  services.xserver.videoDrivers = ["nvidia"];
+
+  hardware.nvidia = {
+    modesetting.enable = true;
+    powerManagement.enable = false;
+    powerManagement.finegrained = false;
+    open = false;
+    nvidiaSettings = true;
+    #package = config.boot.kernelPackages.nvidiaPackages.stable;
+  };
 
   # Enable bluetooth
   hardware.bluetooth = {

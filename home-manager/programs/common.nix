@@ -36,6 +36,7 @@
     pcmanfm
     telegram-desktop
     qbittorrent
+    prismlauncher
 
     # dev tools
     android-tools
