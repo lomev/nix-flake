@@ -11,6 +11,8 @@
   #nixpkgs.config.packageOverrides = pkgs: { nur = import (self.inputs.nur) { inherit pkgs; }; };
   nixpkgs.overlays = [ (import self.inputs.emacs-overlay) ];
 
+  nixpkgs.config.permittedInsecurePackages = [ "qbittorrent-nox-4.6.2" ];
+
   # Set your time zone.
   time.timeZone = "Europe/Warsaw";
 
