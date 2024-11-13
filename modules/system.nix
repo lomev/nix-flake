@@ -126,7 +126,7 @@
     usbutils
     rustup
     vscodium.fhs
-    qbittorrent-nox
+    #qbittorrent-nox
     
     # yubikey
     yubikey-manager
