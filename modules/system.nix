@@ -126,7 +126,8 @@
     usbutils
     rustup
     vscodium.fhs
-
+    qbittorrent-nox
+    
     # yubikey
     yubikey-manager
     yubioath-flutter

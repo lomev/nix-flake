@@ -34,7 +34,7 @@
     evolution
     pcmanfm
     telegram-desktop
-    qbittorrent-nox
+    #qbittorrent-nox
     prismlauncher
     krita
     gimp
