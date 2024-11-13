@@ -5,9 +5,9 @@
 
         package = (
             pkgs.mpv-unwrapped.wrapper {
-              scripts = with pkgs.mpvScripts; [
-                videoclip
-              ];
+                scripts = with pkgs.mpvScripts; [
+                    videoclip
+                ];
             }
         );
 
