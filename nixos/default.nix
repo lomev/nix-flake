@@ -4,7 +4,7 @@
   imports =
     [
       ../modules/system.nix
-      ../modules/gnome.nix
+      ../modules/suckless.nix
       ../modules/networking.nix
       ../modules/steam.nix
 

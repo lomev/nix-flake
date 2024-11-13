@@ -7,7 +7,7 @@
   networking.firewall.enable = false;
 
   networking.stevenblack.enable = true;
-  networking.stevenblack.block = [ "porn" "gambling" ];
+  networking.stevenblack.block = [ "gambling" ];
   networking.extraHosts = ''
     0.0.0.0 nitter.net
     0.0.0.0 www.nitter.net

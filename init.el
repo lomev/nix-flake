@@ -14,8 +14,9 @@
 (unless (package-installed-p 'evil-colemak-basics)
   (package-install 'evil-colemak-basics))
 
-;;(require 'evil)
 (evil-mode 1)
+(require 'rust-mode)
+(add-hook 'rust-mode 'lsp-deffered)
 
 (use-package evil-colemak-basics
   :config

@@ -13,10 +13,15 @@
   home.homeDirectory = "/home/bart";
 
   services.unclutter.enable = true;
-  services.picom.enable = true;
+  #services.picom.enable = true;
   services.dunst.enable = true;
   services.mpd.musicDirectory = "/home/bart/Music";
   services.syncthing.enable = true;
+
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscodium.fhs;
+  };
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release

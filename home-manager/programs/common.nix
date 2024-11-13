@@ -15,7 +15,6 @@
     buku
     fzf
     sfeed
-    mpv
     maim
     xclip
     toot
@@ -37,6 +36,10 @@
     telegram-desktop
     qbittorrent
     prismlauncher
+    krita
+    gimp
+    stellarium
+    thunderbird
 
     # dev tools
     android-tools

@@ -47,7 +47,6 @@
           settings = {
             main = {
               capslock = "overload(control, esc)";
-              esc = "capslock";
               rightalt = "oneshot(altgr)";
               control = "layer(nav)";
             };
@@ -123,6 +122,8 @@
     # basic useful tools
     neovim
     usbutils
+    rustup
+    vscodium.fhs
 
     # yubikey
     yubikey-manager
