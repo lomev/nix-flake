@@ -16,7 +16,7 @@
 
 (evil-mode 1)
 (require 'rust-mode)
-(add-hook 'rust-mode 'lsp-deffered)
+;;(add-hook 'rust-mode 'lsp-deffered)
 
 (use-package evil-colemak-basics
   :config
