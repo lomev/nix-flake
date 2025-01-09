@@ -4,7 +4,10 @@
   imports =
     [
       ../modules/system.nix
-      ../modules/suckless.nix
+      #../modules/suckless.nix
+      #../modules/bspwm.nix
+      #../modules/lua.nix
+      ../modules/awesome.nix
       ../modules/networking.nix
       ../modules/steam.nix
       ../modules/mpv.nix

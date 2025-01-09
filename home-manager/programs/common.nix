@@ -21,6 +21,8 @@
     newsboat
     unzip
     lm_sensors
+    ffmpeg
+    cmus
 
     # gui
     surf
@@ -34,12 +36,13 @@
     evolution
     pcmanfm
     telegram-desktop
-    #qbittorrent-nox
+    #qbittorrent
     prismlauncher
     krita
     gimp
     stellarium
     thunderbird
+    tidal-hifi
 
     # dev tools
     android-tools

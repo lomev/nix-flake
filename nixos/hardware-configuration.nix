@@ -28,10 +28,10 @@
       fsType = "ext4";
     };
   
-  #fileSystems."/media" = 
-  #  { device = "/dev/disk/by-uuid/3daa707d-cc7b-49eb-85b1-26a2a8cb3c62";
-  #    fsType = "ext4";
-  #  };
+  fileSystems."/media" = 
+    { device = "/dev/disk/by-uuid/3daa707d-cc7b-49eb-85b1-26a2a8cb3c62";
+      fsType = "ext4";
+    };
 
   swapDevices =
     [ { device = "/dev/disk/by-uuid/d101b1bf-8718-4a97-aeb6-722c65572115"; }

@@ -5,8 +5,8 @@
     ./git.nix
     ./zathura.nix
     ./lf.nix
+    #./sxhkd.nix
     ./neovim.nix
-    ./sxhkd.nix
     ./xsession.nix
     ./xresources.nix
   ];

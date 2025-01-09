@@ -12,13 +12,14 @@
     xserver = {
       enable = true;
       displayManager.lightdm.enable = true;
-      windowManager.dwm.enable = true;
+      windowManager.bspwm.enable = true;
 
       xkb.layout = "pl";
       xkb.variant = "colemak";
 
       autoRepeatDelay = 300;
       autoRepeatInterval = 50;
+
     };
 
     libinput = {
@@ -29,7 +30,6 @@
 
   environment.systemPackages = with pkgs; [
     st
-    dwmblocks
     dmenu
   ];
 
@@ -53,17 +53,6 @@
           repo = "st-new";
           rev = "4abe01b5858937a42279b056cf63ba95d01a7793";
           hash = "sha256-thY1qhuOK/jo+cBq7cN/MOfeYvrpi2bO1GyU4t80Cjc=";
-        };
-      });
-    })
-
-    (self: super: {
-      dwmblocks = super.dwmblocks.overrideAttrs (oldAttrs: rec {
-        src = pkgs.fetchFromGitHub {
-          owner = "lomev";
-          repo = "dwmblocks-new";
-          rev = "0898beb8a09f27818cedb3b7cbf5920e215a956c";
-          hash = "sha256-oq6kSGhxsaBiFwJKfcCxAi3wEHrOkteQvUMlabn/Kus=";
         };
       });
     })

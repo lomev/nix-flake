@@ -20,59 +20,68 @@
       #"super + Insert" = "clipmenu";
       # youtube
       #"super + y" = "ytfzf -D -L | xargs ~/.local/bin/dmenu_open_url";
+
+      # BSPWM HOTKEYS
+
+      "super + {q,r}" = "bspc {quit,wm -r}";
+      "super + shift + {1-9}" = "bspc node -d '^{1-9'";
+      "super + {_shift + }c" = "bspc node -{c,k}";
+      "super + {n,e,i,o}" = "bspc node -p {west,south,north,east}";
+      "super + {t,shift + t,s,f}" = "bspc node -t {tiled,pseudo_tiled,floating,fullscreen}";
+
       
       # --- dwm ---
       
       # toggle bar
-      "super + b" = "dwmc togglebar";
-      # focus stack
-      "super + {n,e}" = "dwmc focusstack {+,-}1";
-      # rotate stack
-      "super + shift + {n,e}" = "dwmc {pushdown, pushup}";
-      # set mfact
-      "super + {h,i}" = "dwmc setmfact {-,+}0.05";
-      # view
-      "super + Tab" = "dwmc goback";
-      # transfer client to master or stack
-      "super + v " = "dwmc transfer";
-      # zoom
-      "super + Return" = "dwmc zoom";
-      # toggle floating
-      "super + backslash" = "dwmc togglefloating";
-      # toggle fullscreen
-      "super + f" = "dwmc togglefullscr";
-      # kill client
-      "super + q " = "dwmc killclient";
-      # show list of layouts
-      #"super + g" = "~/.local/bin/dmenu_layout";
-      # view all tags
-      "super + 0" = "dwmc viewall";
-      # tag all
-      "super + shift + 0" = "dwmc tagall";
-      # view tag; move client to diffrent tag
-      "super + {_,ctrl +}{_,shift +} {1-9}" = "dwmc {_,toggle}{viewex,tagex} {0-8}";
-      # change monitor
-      "super + {comma, period}" = "dwmc focusmon {-,+}1 ";
-      # move client to the other monitor
-      "super + shift + {comma, period}" = "dwmc tagmon {-,+}1 ";
-      # change gaps
-      "super + {equal,minus}" = "dwmc incrgaps {+,-}1";
-      # reset gaps
-      "super + shift + equal" = "dwmc defaultgaps";
-      # change gaps to default
-      "super + shift + minus" = "dwmc togglegaps";
-      # shift view to next tag
-      "super + bracketright" = "dwmc shiftview 1";
-      # shift view to prev tag
-      "super + bracketleft" = "dwmc shiftview -1";
-      # toggle scratchpads
-      "super + {s,r}" = "dwmc togglescratch {0,1}";
-      # update colorscheme
-      #"super + F5" = "xrdb -merge $HOME/.Xresources;";
-      # restart dwm
-      "super + shift + q" = "dwmc quit";
-      # quit dwm
-      "super + shift + BackSpace" = "killall xinit";
+      #"super + b" = "dwmc togglebar";
+      ## focus stack
+      #"super + {n,e}" = "dwmc focusstack {+,-}1";
+      ## rotate stack
+      #"super + shift + {n,e}" = "dwmc {pushdown, pushup}";
+      ## set mfact
+      #"super + {h,i}" = "dwmc setmfact {-,+}0.05";
+      ## view
+      #"super + Tab" = "dwmc goback";
+      ## transfer client to master or stack
+      #"super + v " = "dwmc transfer";
+      ## zoom
+      #"super + Return" = "dwmc zoom";
+      ## toggle floating
+      #"super + backslash" = "dwmc togglefloating";
+      ## toggle fullscreen
+      #"super + f" = "dwmc togglefullscr";
+      ## kill client
+      #"super + q " = "dwmc killclient";
+      ## show list of layouts
+      ##"super + g" = "~/.local/bin/dmenu_layout";
+      ## view all tags
+      #"super + 0" = "dwmc viewall";
+      ## tag all
+      #"super + shift + 0" = "dwmc tagall";
+      ## view tag; move client to diffrent tag
+      #"super + {_,ctrl +}{_,shift +} {1-9}" = "dwmc {_,toggle}{viewex,tagex} {0-8}";
+      ## change monitor
+      #"super + {comma, period}" = "dwmc focusmon {-,+}1 ";
+      ## move client to the other monitor
+      #"super + shift + {comma, period}" = "dwmc tagmon {-,+}1 ";
+      ## change gaps
+      #"super + {equal,minus}" = "dwmc incrgaps {+,-}1";
+      ## reset gaps
+      #"super + shift + equal" = "dwmc defaultgaps";
+      ## change gaps to default
+      #"super + shift + minus" = "dwmc togglegaps";
+      ## shift view to next tag
+      #"super + bracketright" = "dwmc shiftview 1";
+      ## shift view to prev tag
+      #"super + bracketleft" = "dwmc shiftview -1";
+      ## toggle scratchpads
+      #"super + {s,r}" = "dwmc togglescratch {0,1}";
+      ## update colorscheme
+      ##"super + F5" = "xrdb -merge $HOME/.Xresources;";
+      ## restart dwm
+      #"super + shift + q" = "dwmc quit";
+      ## quit dwm
+      #"super + shift + BackSpace" = "killall xinit";
       
       # resize active window
       
